@@ -135,11 +135,3 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-=======
-.DS_Store
-/node_modules/
-
-# React Router
-/.react-router/
-/build/
->>>>>>> 4942be7 (Inicio Aplicación)
