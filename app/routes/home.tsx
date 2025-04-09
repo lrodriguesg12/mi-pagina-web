@@ -1,25 +1,23 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
 
-
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Modificado" },
+    { title: "Mi nueva página web" },
     { name: "description", content: "Welcome to React Router!" },
   ];
 }
 
 export default function Home() {
   return (
-    <div>
-          <h1 className="text-9xl text-pink-500">Esto es mi nueva página web</h1>
-          <h2 className="text-6xl hover:text-yellow-300">Hola</h2>
-          <a href="/perfil">
-            Navegar a mi perfil
-          </a>
-    </div>
+    <>
+      <h1 className="text-5xl">Mi página web</h1>
+      <h3 className="text-pink-400" >Creado el 9 de abril de 2025</h3>
+      <p>En la rama newVersion</p>
+    </>
   );
 }
+
 
 // export default function Home() {
 //   return <Welcome />;

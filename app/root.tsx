@@ -25,7 +25,7 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es">
+    <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -33,9 +33,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <h1 className="text-3xl text-green-300">Esto es la cabecera</h1>
         {children}
-        <footer className="text-2xl text-purple-400">Esto es el pie de página</footer>
         <ScrollRestoration />
         <Scripts />
       </body>
