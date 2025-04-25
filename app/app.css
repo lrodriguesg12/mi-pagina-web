@@ -12,4 +12,10 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+
+  @media (max-width: 640px) {
+    body {
+      background-color: pink;
+    }
+  }
 }
