@@ -1,9 +1,10 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
+// import Calendar from "../components/Calendar"; <-- Para añadir el calendario
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Mi nueva página web" },
+    { title: "La página de Luci" },
     { name: "description", content: "Welcome to React Router!" },
   ];
 }
@@ -11,12 +12,9 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <div>
-          <h1 className="text-9xl text-pink-500">Esto es mi nueva página web</h1>
-          <h2 className="text-7xl text-blue-500"> En la rama MAIN</h2>
-          <h2 className="text-6xl hover:text-yellow-300">Hola</h2>
-          <a href="/perfil">
-            Navegar a mi perfil
-          </a>
+          <h1 className="text-9xl bg-gradient-to-r from-orange-400 via-pink-600 to-orange-400 bg-clip-text text-transparent  text-center p-12 font-semibold">Bienvenid@ a mi página</h1>
+          <h1 className="text-7xl text-orange-600 text-center p-8">🚧 Aún está bajo construcción 🚧</h1>
+          <h1 className="text-5xl text-pink-700 text-center p-8">Aquí hay poco que ver...🏗️👷🏽‍♀️</h1>
     </div>
   );
 }
