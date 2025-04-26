@@ -15,4 +15,4 @@ Consiste en una página web construida con **React.js**, estilizada con **Tailwi
 - [x] Funcionalidad básica implementada.
 - [x] Despliegue en Firebase completado.
 - [x] Configuración de GitHub Actions.
-- [ ] Funcionalidad y contenido de la página.
+- [ ] Temática y contenido de la página.
