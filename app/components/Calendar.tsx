@@ -13,14 +13,27 @@ const CalendarAugust2025 = () => {
 
   const handleClick = (day: number) => {
     if (day === 15) {
-      setMessage("Recordatorio: felicitar a Lucía"); // mensaje que aparece cuando se hace click en el 15
+      setMessage("Recordatorio: ¡felicitar a Lucía!");
+
+      // temporizador para que desaparezca el mensaje
+      setTimeout(() => {
+        setMessage("");
+      }, 2500); // 2500ms
     } else {
-      setMessage(""); // quita el mensaje si haces click en otro día
+      setMessage("");
     }
   };
 
   return (
-    <div className="p-4 max-w-md mx-auto bg-white rounded-xl shadow-lg">
+    <div className="relative p-4 max-w-md mx-auto bg-white rounded-xl shadow-lg">
+      {/* Mensaje superpuesto */}
+      {message && (
+        <div className="absolute inset-0 bg-pink-100 bg-opacity-70 flex items-center justify-center text-pink-600 font-bold text-lg rounded-xl p-4">
+          {message}
+        </div>
+      )}
+
+      {/* Calendario */}
       <h2 className="text-2xl font-bold text-center mb-4">Agosto 2025</h2>
       <div className="grid grid-cols-7 gap-2 text-center text-sm">
         {daysOfWeek.map((day) => (
@@ -46,11 +59,6 @@ const CalendarAugust2025 = () => {
           )
         )}
       </div>
-      {message && (
-        <div className="mt-4 text-center text-pink-600 font-semibold animate-bounce">
-          {message}
-        </div>
-      )}
     </div>
   );
 };

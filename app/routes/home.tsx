@@ -1,6 +1,7 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
 import Calendar from "../components/Calendar"; // <-- Para añadir el calendario
+import Spotify from "../components/Spotify"; // <-- Para añadir una canción de spotify
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -12,11 +13,19 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <div>
-          <h1 className=" font-['Cal_Sans'] text-lg md:text-4xl lg:text-7xl bg-gradient-to-r from-orange-400 via-pink-600 to-orange-400 bg-clip-text text-transparent  text-center p-12">Bienvenid@ a mi página</h1>
-          <h1 className="text-base  md:text-2xl lg:text-5xl text-orange-600 text-center p-8">🚧 Aún está bajo construcción 🚧</h1>
-          <h1 className="text-base md:text-xl lg:text-4xl text-pink-700 text-center p-8">Aquí hay poco que ver...🏗️👷🏽‍♀️</h1>
-
-          <Calendar /> 
+      <div id="mensaje">
+            <h1 className=" font-['Cal_Sans'] text-lg md:text-4xl lg:text-7xl bg-gradient-to-r from-orange-400 via-pink-600 to-orange-400 bg-clip-text text-transparent  text-center p-12">Bienvenid@ a mi página</h1>
+            <h1 className="text-base  md:text-2xl lg:text-5xl text-orange-600 text-center p-8">🚧 Aún está bajo construcción 🚧</h1>
+            <h1 className="text-base md:text-xl lg:text-4xl text-pink-700 text-center p-8">Aquí hay poco que ver...🏗️👷🏽‍♀️</h1>
+      </div>
+      <div id="accesorios" className="flex items-center justify-center gap-10 w-screen">
+        <div className="h-96 w-96">
+          <Calendar />
+        </div>
+        <div className="h-96 w-96">
+          <Spotify />
+        </div>
+      </div>
     </div>
   );
 }

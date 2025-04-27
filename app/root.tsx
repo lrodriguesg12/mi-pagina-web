@@ -22,7 +22,7 @@ export const links: Route.LinksFunction = () => [
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
 
-  { // La fuente que he sacado de google para el titulo
+  { //La fuente que he sacado de google para el titulo (Cal_Sans)
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap",
   },

@@ -12,7 +12,8 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
-
+  
+/* Estilos para teléfonos (funciona a medias) */
   @media (max-width: 640px) {
     body {
     }
