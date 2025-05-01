@@ -22,9 +22,7 @@ export default function Home() {
         <div className="h-96 w-96">
           <Calendar />
         </div>
-        <div className="h-96 w-96">
           <Spotify />
-        </div>
       </div>
     </div>
   );
