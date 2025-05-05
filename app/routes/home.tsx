@@ -1,6 +1,7 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
 import Noticia from "~/components/Noticia";
+import Ejemplo from "~/components/Ejemplo";
 
 
 export function meta({}: Route.MetaArgs) {
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <div className="border border-red-500">
           <h1>Noticias</h1>
+          <Ejemplo/>
           {/* Noticias */}
           <section>
             <Noticia titulo="Título 1" descripcion="Descripcion 1" gap={4}/>
