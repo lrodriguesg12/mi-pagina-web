@@ -2,6 +2,7 @@ import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
 import Calendar from "../components/Calendar"; // <-- Para añadir el calendario
 import Spotify from "../components/Spotify"; // <-- Para añadir una canción de spotify
+import Perfildelapagina from "~/components/perfildelapagina";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -12,17 +13,11 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <div>
-      <div id="mensaje">
-            <h1 className=" font-['Cal_Sans'] text-lg md:text-4xl lg:text-7xl bg-gradient-to-r from-orange-400 via-pink-600 to-orange-400 bg-clip-text text-transparent  text-center p-12">Bienvenid@ a mi página</h1>
-            <h1 className="text-base  md:text-2xl lg:text-5xl text-orange-600 text-center p-8">🚧 Aún está bajo construcción 🚧</h1>
-            <h1 className="text-base md:text-xl lg:text-4xl text-pink-700 text-center p-8">Aquí hay poco que ver...🏗️👷🏽‍♀️</h1>
-      </div>
-      <div id="accesorios" className="flex items-center justify-center gap-10 w-screen">
-        <div className="h-96 w-96">
-          <Calendar />
-        </div>
-          <Spotify />
+    <div className="h-screen flex flex-col items-center content-evenly gap-20 pt-40">
+      <Perfildelapagina/>
+      <div id="botones" className="flex justify-center">
+        <button type="button" className="text-white font-['Raleway'] font-semibold bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 font-medium rounded-lg text-md px-5 py-2.5 text-center me-2 mb-2"><a href="info">Más info sobre mí</a></button>
+        <button type="button" className="text-white font-['Raleway'] font-semibold bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 font-medium rounded-lg text-md px-5 py-2.5 text-center me-2 mb-2"><a href="aficiones">Conoce mis intereses</a></button>
       </div>
     </div>
   );

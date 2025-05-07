@@ -18,9 +18,14 @@ const CalendarAugust2025 = () => {
       // temporizador para que desaparezca el mensaje
       setTimeout(() => {
         setMessage("");
-      }, 2500); // 2500ms
+      }, 1000); // 1000ms
     } else {
-      setMessage("");
+      setMessage("Nada importante...");
+
+      // temporizador para que desaparezca el mensaje
+      setTimeout(() => {
+        setMessage("");
+      }, 1000); // 1000ms
     }
   };
 
@@ -28,7 +33,7 @@ const CalendarAugust2025 = () => {
     <div className="relative p-4 max-w-md mx-auto bg-white rounded-xl shadow-lg">
       {/* Mensaje superpuesto */}
       {message && (
-        <div className="absolute inset-0 bg-pink-100 bg-opacity-70 flex items-center justify-center text-pink-600 font-bold text-lg rounded-xl p-4">
+        <div className="absolute inset-0 bg-gray-100  flex items-center justify-center text-pink-600 font-bold text-xl rounded-xl p-4">
           {message}
         </div>
       )}
