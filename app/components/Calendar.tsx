@@ -1,71 +1,82 @@
-import React, { useState } from "react";
+import React from "react";
 
-const CalendarAugust2025 = () => {
-  const [message, setMessage] = useState("");
-
-  const daysOfWeek = ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"];
-  const daysInMonth = 31;
-  const firstDay = 4; // Viernes
-
-  const blanks = Array(firstDay).fill(null);
-  const days = Array.from({ length: daysInMonth }, (_, i) => i + 1);
-  const calendarDays = [...blanks, ...days];
-
-  const handleClick = (day: number) => {
-    if (day === 15) {
-      setMessage("Recordatorio: ¡felicitar a Lucía!");
-
-      // temporizador para que desaparezca el mensaje
-      setTimeout(() => {
-        setMessage("");
-      }, 1000); // 1000ms
-    } else {
-      setMessage("Nada importante...");
-
-      // temporizador para que desaparezca el mensaje
-      setTimeout(() => {
-        setMessage("");
-      }, 1000); // 1000ms
-    }
+const Calendar: React.FC = () => {
+  const botonDia = () => {
+    alert("Recordatorio: ¡Felicitar a Lucía!");
+    console.log("¿Qué estás buscando aquí?");
   };
 
-  return (
-    <div className="relative p-4 max-w-md mx-auto bg-white rounded-xl shadow-lg">
-      {/* Mensaje superpuesto */}
-      {message && (
-        <div className="absolute inset-0 bg-gray-100  flex items-center justify-center text-pink-600 font-bold text-xl rounded-xl p-4">
-          {message}
-        </div>
-      )}
-
-      {/* Calendario */}
-      <h2 className="text-2xl font-bold text-center mb-4">Agosto 2025</h2>
-      <div className="grid grid-cols-7 gap-2 text-center text-sm">
-        {daysOfWeek.map((day) => (
-          <div key={day} className="font-semibold">
-            {day}
-          </div>
-        ))}
-        {calendarDays.map((day, index) =>
-          day ? (
-            <div
-              key={index}
-              onClick={() => handleClick(day)}
-              className={`w-full aspect-square flex items-center justify-center rounded-lg cursor-pointer transition ${
-                day === 15
-                  ? "bg-pink-500 text-white font-bold hover:bg-pink-600"
-                  : "bg-white-100 hover:bg-pink-200"
-              }`}
-            >
-              {day}
-            </div>
-          ) : (
-            <div key={index}></div>
-          )
-        )}
-      </div>
-    </div>
+  return (<div className="bg-white shadow-lg rounded-xl p-4 w-full max-w-sm mb-[23px]">
+    <h1 className="text-2xl font-bold text-center mb-4 text-pink-900">Agosto 2025</h1>
+    <table className="table-fixed w-full border-collapse text-center">
+      <thead className="bg-gradient-to-r from-pink-300 via-pink-400 to-pink-300 text-pink-900">
+        <tr>
+          <th className="w-1/7 py-[13px] text-[16px] rounded-tl-xl">Lun</th>
+          <th className="w-1/7 py-[13px] text-[16px]">Mar</th>
+          <th className="w-1/7 py-[13px] text-[16px]">Mié</th>
+          <th className="w-1/7 py-[13px] text-[16px]">Jue</th>
+          <th className="w-1/7 py-[13px] text-[16px]">Vie</th>
+          <th className="w-1/7 py-[13px] text-[16px]">Sáb</th>
+          <th className="w-1/7 py-[13px] text-[16px] rounded-tr-xl">Dom</th>
+        </tr>
+      </thead>
+      <tbody>
+        {/* Semana 1 */}
+        <tr>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold"></td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold"></td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold"></td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold"></td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">1</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">2</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">3</td>
+        </tr>
+        {/* Semana 2 */}
+        <tr>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">4</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">5</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">6</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">7</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">8</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">9</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">10</td>
+        </tr>
+        {/* Semana 3 */}
+        <tr>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">11</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">12</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">13</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">14</td>
+          <td
+           className="py-[13px] text-[16px] bg-pink-300 hover:bg-pink-500 active:bg-white active:text-pink-500 font-extrabold cursor-pointer" 
+           onClick={botonDia}>15</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">16</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">17</td>
+        </tr>
+        {/* Semana 4 */}
+        <tr>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">18</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">19</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">20</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">21</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">22</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">23</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">24</td>
+        </tr>
+        {/* Semana 5 */}
+        <tr>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">25</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">26</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">27</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">28</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">29</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">30</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">31</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   );
 };
 
-export default CalendarAugust2025;
+export default Calendar;
