@@ -19,7 +19,7 @@ export default function Aficiones() {
           <Spotify/>
         </div>
 				<div className="w-full lg:w-6/17">
-        	<img src="app/components/javito.jpg" className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" />
+        	<img src="/javito.jpg" className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" />
 				</div>
       </div>
       <button type="button" className="text-white font-['Raleway'] font-semibold bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 font-medium rounded-lg text-md px-5 py-2.5 text-center"><a href="/..">Volver</a></button>

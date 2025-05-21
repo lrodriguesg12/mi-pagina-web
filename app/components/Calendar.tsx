@@ -23,55 +23,55 @@ const Calendar: React.FC = () => {
       <tbody>
         {/* Semana 1 */}
         <tr>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold"></td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold"></td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold"></td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold"></td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">1</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">2</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">3</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed"></td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed"></td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed"></td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed"></td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">1</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">2</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">3</td>
         </tr>
         {/* Semana 2 */}
         <tr>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">4</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">5</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">6</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">7</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">8</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">9</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">10</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">4</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">5</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">6</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">7</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">8</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">9</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">10</td>
         </tr>
         {/* Semana 3 */}
         <tr>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">11</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">12</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">13</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">14</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">11</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">12</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">13</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">14</td>
           <td
            className="py-[13px] text-[16px] bg-pink-300 hover:bg-pink-500 active:bg-white active:text-pink-500 font-extrabold cursor-pointer" 
            onClick={botonDia}>15</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">16</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">17</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">16</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">17</td>
         </tr>
         {/* Semana 4 */}
         <tr>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">18</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">19</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">20</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">21</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">22</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">23</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">24</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">18</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">19</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">20</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">21</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">22</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">23</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">24</td>
         </tr>
         {/* Semana 5 */}
         <tr>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">25</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">26</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">27</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">28</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">29</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">30</td>
-          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold">31</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">25</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">26</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">27</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">28</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">29</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">30</td>
+          <td className="py-[13px] text-[16px] border border-pink-300 hover:bg-pink-200 font-semibold cursor-not-allowed">31</td>
         </tr>
       </tbody>
     </table>
