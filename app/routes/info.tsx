@@ -11,6 +11,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Info() {
   return (
     <div className="flex flex-col items-center mb-[15px]">
+      <p className="text-pink-200">Ya sé que no es responsive :(</p>
       <div className="max-w-6xl max-h-6xl flex items-center h-[860px] flex-wrap mx-auto lg:my-0">
         <div className="bg-gray-50 rounded-xl mr-[0px] pt-10 justify-items-center w-[60%] mx-auto shadow-[20px_20px_35px_rgba(0,0,0,0.20)">
           <h1 className="text-center text-3xl font-bold pt-8 lg:pt-0 font-['Cal_Sans'] bg-gradient-to-r from-orange-400 to-pink-600 bg-clip-text text-transparent">Sobre Luci</h1>
